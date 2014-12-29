@@ -7,5 +7,5 @@ package com.overseas.core.domain.hotel;
  *
  */
 public class HotelNo {
-    long value;
+    long val;
 }
