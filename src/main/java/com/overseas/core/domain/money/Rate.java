@@ -19,7 +19,13 @@ import lombok.Value;
 @Value
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Rate {
+    /**
+     * 料金。
+     */
     BigDecimal val;
+    /**
+     * 単位。
+     */
     Currency currency;
 
     public static Rate of(@NonNull BigDecimal val, @NonNull Currency currency) {
@@ -76,6 +82,10 @@ public class Rate {
     public Rate divide(@NonNull Rate rate) {
         checkHasSameCurrencyAs(rate);
         return Rate.of(val.divide(rate.val), currency);
+    }
+
+    public BigDecimal toJpy() {
+        return val.multiply(currency.getExchangeRate().getAmount());
     }
 
     private void checkHasSameCurrencyAs(Rate rate) {
