@@ -1,11 +1,11 @@
 package com.overseas.core.domain.business;
 
 /**
- * 提携状況と表すクラス。
+ * 提携状況と表す。
  * 
  * @author daisuke
  *
  */
-public class Teikei {
+public enum Teikei {
 
 }

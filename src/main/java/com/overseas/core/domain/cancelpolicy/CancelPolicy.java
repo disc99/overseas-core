@@ -1,5 +1,13 @@
 package com.overseas.core.domain.cancelpolicy;
 
-public class CancelPolicy {
+import java.util.List;
 
+/**
+ * キャンセルポリシーを表すクラス。
+ * 
+ * @author daisuke
+ *
+ */
+public class CancelPolicy {
+    List<String> rules;
 }
