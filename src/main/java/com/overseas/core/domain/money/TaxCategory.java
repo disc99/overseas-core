@@ -1,5 +1,10 @@
 package com.overseas.core.domain.money;
 
-public class TaxCategory {
-
+/**
+ * 税サ区分を表す。
+ * 
+ * @author daisuke
+ *
+ */
+public enum TaxCategory {
 }
