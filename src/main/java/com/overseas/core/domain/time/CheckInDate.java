@@ -1,4 +1,4 @@
-package com.overseas.core.domain.date;
+package com.overseas.core.domain.time;
 
 /**
  * チェックイン日を表すクラス。

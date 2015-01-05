@@ -1,5 +1,5 @@
 package com.overseas.core.domain;
 
-public class Values {
+public class ValueObjects {
     public static final String FACTORY = "of";
 }

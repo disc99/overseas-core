@@ -6,6 +6,6 @@ package com.overseas.core.domain.business;
  * @author daisuke
  *
  */
-public enum Oem {
+public enum OemType {
 
 }
