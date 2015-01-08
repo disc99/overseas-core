@@ -84,10 +84,6 @@ public class RoomRate {
         return RoomRate.of(val.divide(rate.val), currency);
     }
 
-    public BigDecimal toJpy() {
-        return val.multiply(currency.getExchangeRate().getAmount());
-    }
-
     private void checkHasSameCurrencyAs(RoomRate rate) {
         if (this.currency.equals(rate.currency)) {
             new IllegalArgumentException(rate.toString() + " is not same currency as " + this.toString());

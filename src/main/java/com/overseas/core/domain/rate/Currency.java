@@ -27,17 +27,13 @@ public class Currency {
      */
     String displayName;
     /**
-     * この通貨の日本円への為替レート。 日本円の場合は、1とする。
-     */
-    ExchangeRate exchangeRate;
-    /**
      * この通貨で使用される小数のデフォルトの桁数
      */
     int defaultFractionDigits;
 
     public Currency of(@NonNull String currencyCode, @NonNull String displayName, @NonNull ExchangeRate exchangeRate,
             int defaultFractionDigits) {
-        return new Currency(currencyCode, displayName, exchangeRate, defaultFractionDigits);
+        return new Currency(currencyCode, displayName, defaultFractionDigits);
     }
 
 }
