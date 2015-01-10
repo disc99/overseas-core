@@ -8,4 +8,13 @@ package com.overseas.core.domain.rate;
  */
 public enum PaymentType {
     CASH, CARD;
+
+    /**
+     * カード決済か判定する。
+     * 
+     * @return
+     */
+    public boolean isCard() {
+        return this == CARD;
+    }
 }
