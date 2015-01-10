@@ -1,10 +1,11 @@
 package com.overseas.core.domain.rate;
 
 /**
- * 税区分を表すクラス。
+ * サービス区分を表すクラス。
  * 
  * @author daisuke
  *
  */
-public enum TaxCategory {
+public enum FeeCategory {
+
 }
