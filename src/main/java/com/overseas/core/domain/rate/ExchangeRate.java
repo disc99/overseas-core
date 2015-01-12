@@ -6,5 +6,6 @@ import lombok.Value;
 
 @Value
 public class ExchangeRate {
+    Currency currency;
     BigDecimal amount;
 }
